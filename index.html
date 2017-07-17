@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="BirdApp">
+<head>
+    <title>Bird Group</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <script src ="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+         <nav class="navbar navbar-fixed-top navbar-custom">
+            <article class="container">
+                <article class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </article>
+        <ul id="myCollapsingList" class="nav collapse navbar-collapse nav-justified" >
+            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="/">Home </a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="/about"> About </a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="/media"> Media </a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="/events"> Events </a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="/newsletter/register/"> Newsletter </a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="/contact"> Contact Us </a></li>
+        </ul>
+    </article>
+</nav>
+    <article class="jumbotron">
+            <h1>Bird Group</h1>
+            <p>Sale's Friday Bird Watching Group</p>        
+    </article>
+
+    <article ng-view>
+    </article>
+
+ <footer class="col-12 fixed-bottom">
+            <hr />
+            <h3>Social Media Pages</h3>
+            <p>
+                <a href="http://www.facebook.com"> <figure class="socialmedia"><img src="images/facebook.jpeg" alt="facebook page" height="50px" width="50px" /> </figure></a>
+                <a href="http://www.twitter.com"> <figure class="socialmedia"><img src="images/twitter.jpeg" alt="twitter feed" height="50px" width="50px" /> </figure></a>
+                <a href="http://www.instagram.com"> <figure class="socialmedia"><img src="images/instagram.jpg" alt="instagram feed" height="50px" width="50px" /></figure> </a>
+
+            </p>
+
+            <p>Copyright 2017</p>
+        </footer>
+ 
+  </body>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+
+</html>

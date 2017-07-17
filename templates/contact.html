@@ -1,0 +1,38 @@
+<article class="container">
+  <h1>{{title}}</h1>
+  <h4>{{info}}</h4>
+	<hr />
+
+</article>
+
+<article class="container" align="center">
+
+   	<article id="form">
+    <form name="contactForm" ng-submit="submitForm()" novalidate>
+        <fieldset>
+            <legend>Contact Us:</legend>
+            <label>Name:</label>
+            <input type="text" name="name" class="form-control" data-ng-model="contact.name" required="required" placeholder="please enter your name">
+            <p ng-show="contactForm.name.$pristine" class="help-block">Your name is required</p>
+            
+            <label>Email:</label>
+            <input type="email" name="email" class="form-control" data-ng-model="contact.email" required="" placeholder="please enter your email address">
+            <p ng-show="contactForm.email.$pristine" class="help-block">Your email address is required</p>
+
+            <label>Contact Number:</label>
+            <input type="tel" name="contact" class="form-control" data-ng-model="contact.number" required="" placeholder="please enter your contact number">
+            <p ng-show="contactForm.contact.$pristine" class="help-block">Your contact number is required</p>
+
+            <label>Day interested in:</label>
+            <input type="text" name="details" class="form-control" data-ng-model="contact.day" required="" placeholder="please enter the day(s) you are interested in">
+            <p ng-show="contactForm.details.$pristine" class="help-block">Friday and/or Tuesday is required</p>
+
+            <br />
+            
+            <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid">Submit</button>
+        </fieldset>
+    </form>
+</article>
+</article>
+
+
